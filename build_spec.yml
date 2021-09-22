@@ -15,7 +15,7 @@ steps:
       echo $PATH
       mvn clean install
   - type: Command
-    timeoutInSeconds: 400
+    timeoutInSeconds: 401
     name: "Dockerizer"
     command: |
       BuildServiceDemoVersion=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
